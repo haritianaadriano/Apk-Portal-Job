@@ -1,0 +1,7 @@
+{
+  "name": "Portal-job",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
