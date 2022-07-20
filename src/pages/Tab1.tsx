@@ -1,22 +1,18 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import Scraping from '../dataContent';
 import './Tab1.css';
 
 const Tab1: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader>
+      <IonHeader className='title'>
         <IonToolbar>
-          <IonTitle>Tab 1</IonTitle>
+          <IonTitle>Portal-job</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 1</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="Tab 1 page" />
+      <IonContent fullscreen className='content'>
+            <IonTitle size="large">Job-annonce</IonTitle>
+          <Scraping></Scraping>
       </IonContent>
     </IonPage>
   );
